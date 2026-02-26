@@ -108,3 +108,7 @@ def wait_for_pod_deleted(
         sleep(poll_interval_seconds)
 
     raise AssertionError(f"Timed out waiting for pod deletion: {namespace}/{name}")
+
+
+def list_pods(api: client.CoreV1Api, namespace: str) -> client.V1PodList:
+    return api.list_namespaced_pod(namespace=namespace)
