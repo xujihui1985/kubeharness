@@ -1,6 +1,6 @@
 from kubernetes import client
 
-from pod_harness.config import Settings
+from kubeharness.config import Settings
 
 
 def create_core_v1_api(settings: Settings) -> client.CoreV1Api:

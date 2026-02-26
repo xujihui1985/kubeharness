@@ -2,8 +2,8 @@ from uuid import uuid4
 
 import pytest
 
-from pod_harness.config import Settings
-from pod_harness.pod_lifecycle import (
+from kubeharness.config import Settings
+from kubeharness.pod_lifecycle import (
     create_sleep_pod,
     delete_pod,
     wait_for_pod_deleted,
