@@ -25,4 +25,4 @@ markers = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pod_harness"]
+packages = ["src/kubeharness"]
